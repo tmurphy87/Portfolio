@@ -1,0 +1,30 @@
+* { box-sizing: border-box; }
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.header h1 {
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.image {
+	width: 30%;
+	float: left;
+	display: inline-block;
+}
+
+.column {
+	width: 30%;
+	float: left;
+	display: inline-block;
+	padding: 0 20px;
+}
+
+.main-text {
+	clear: both;
+	padding-top: 60px;
+}
+
