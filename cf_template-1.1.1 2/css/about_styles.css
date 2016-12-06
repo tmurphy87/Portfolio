@@ -1,19 +1,23 @@
 * { box-sizing: border-box; }
 
+body {
+	background-color: rgba(135, 162, 169, 0.44);
+	color: #34495e;
+}
+
 .container {
 	width: 80%;
-	margin: 0 auto;
+	margin: 100px auto;
 }
 
 .header h1 {
 	text-align: center;
-	margin-bottom: 60px;
+	margin: 100px 0px;
 }
 
 .image {
-	width: 30%;
-	float: left;
 	display: inline-block;
+	float: left;
 }
 
 .column {
@@ -24,7 +28,61 @@
 }
 
 .main-text {
+	position: relative;
 	clear: both;
 	padding-top: 60px;
 }
+
+.full-width {
+	width: 100%;
+}
+
+#skill-list {
+	margin-left: 10px;
+}
+
+/*Typography*/
+
+h1,
+h2,
+h3 {
+	font-family: 'Armata', Helvetica, Arial, sans-serif;
+}
+
+p,
+li {
+	font-family: Georgia, 'Palatino', serif;
+}
+
+.intro p {
+	font-family: 'Caveat', Helvetica, Arial, sans-serif, cursive;
+	font-size: 2em;
+	font-weight: 100;
+	-webkit-margin-before: 0em;
+}
+
+.skills h3 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.skills {
+	background-color: rgba(160, 150, 140, 0.82);
+	color: #FFF;
+	padding: 20px;
+}
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -8,10 +8,14 @@
     }
 
 	.jumbotron h1 {
-		color: white;
+		color: rgba(7, 22, 107, 0.78);
 	}
 
 	.jumbotron a {
 		color: white;
+	}
+
+	body {
+		background-color: rgba(135, 162, 169, 0.3);
 	}
 

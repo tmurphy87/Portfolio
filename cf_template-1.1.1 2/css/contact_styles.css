@@ -1,0 +1,42 @@
+* { box-sizing: border-box; }
+
+html,body { 
+	margin:0; 
+	padding:0; 
+	height:100%; 
+	width:100%; 
+}
+
+.bg-contact{
+	background-image: url("../img/type.jpg");
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.contact-container {
+	position: absolute;
+	left: 42%;
+	top: 55%;
+}
+
+/*Typography*/
+
+h1,
+h2 {
+	font-family: 'Armata', Helvetica, Arial, sans-serif;
+	font-size: 3em;
+	font-weight: 50;
+}
+
+.contact-container {
+	background-color: rgba(221, 221, 221, 0.73);
+	padding: 20px;
+}
+
+p {
+	font-family: 'Gentium Basic', Georgia, serif;
+	font-size: large;
+}
+
+
