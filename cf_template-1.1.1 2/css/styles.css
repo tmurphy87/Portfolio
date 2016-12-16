@@ -19,3 +19,106 @@
 		background-color: rgba(135, 162, 169, 0.3);
 	}
 
+/**** CONTACT PAGE ****/
+* { box-sizing: border-box; }
+
+html,body { 
+	margin:0; 
+	padding:0; 
+	height:100%; 
+	width:100%; 
+}
+
+.bg-contact{
+	background-image: url("../img/type.jpg");
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.contact-box {
+	position: absolute;
+	left: 42%;
+	top: 55%;
+}
+
+.contact-box p:hover {
+	color: #9D6373;
+}
+
+/*NAV BAR*/
+.nav-bar {
+	background-color: #9d6370;
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+
+.nav-bar ul {
+	float: right;
+}
+
+.nav-bar ul li {
+	display: inline-block;
+}
+
+.nav-bar ul li a {
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0.05em;
+	padding: 20px 10px 20px;
+}
+
+.nav-bar a {
+	transition: color 600ms;
+	-webkit-transition: color 600ms;
+}
+
+.nav-bar a:hover {
+	color: #cad6d9;
+	text-decoration: none;
+}
+
+/**** FAQ PAGE ****/
+.content-faq {
+	padding-top: 10%;
+}
+
+.panel-default>.panel-heading {
+	background-color: rgba(157, 157, 157, 0.75);
+	border-style: none;
+}
+
+/*Typography+Contact Page*/
+
+h1,
+h2 {
+	font-family: 'Armata', Helvetica, Arial, sans-serif;
+	font-size: 3em;
+	font-weight: 50;
+}
+
+.contact-box {
+	background-color: rgba(221, 221, 221, 0.73);
+	padding: 20px;
+}
+
+p {
+	font-family: 'Gentium Basic', Georgia, serif;
+	font-size: large;
+}
+
+/*Typography+FAQ Page*/
+
+.panel-title {
+	font-family: 'Armata', Helvetica, Arial, sans-serif;
+}
+
+.panel-body {
+	font-family: 'Gentium Basic', Georgia, serif;
+	font-weight: bolder;
+	font-size: medium;
+}
+
+
