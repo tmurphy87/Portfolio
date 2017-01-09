@@ -11,10 +11,13 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-
+    <!--Custom Styles-->
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Armata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Basic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -24,7 +27,42 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar">
+ <!--navbar starts here-->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse"
+        data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="Tiffany Murphy navbar-brand">
+          <a href="#">Tiffany Murphy</a>
+        </div> <!--end tiffanymurphy -->
+      </div><!-- end navbar-header -->
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li role="presentation" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            Work<span class="caret"></span>
+            </a>
+          <ul class="dropdown-menu">
+            <li class=""><a href="#work1">Work 1</a></li>
+            <li class=""><a href="#work2">Work 2</a></li>
+          </ul>
+          </li><!--end dropdown-->
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div><!-- end navbar collapse -->
+    </div><!-- end nav container -->
+  </nav> <!-- end navbar -->
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <!--div class="jumbotron"
@@ -39,15 +77,15 @@
       </div>
     </div> -->
     <!--Start Nav-->
-    <div class="nav">
+    <!--div class="nav">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="#index">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#FAQ">FAQ</a></li>
       </ul>
     </div> <!--End Nav-->
-
+    <!--Index Section-->
     <!-- start carousel -->
     <div class="container-fluid" id="home">
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -57,7 +95,6 @@
           <li data-target="#carousel-example-generic" data-slide-to="1"></li>
           <li data-target="#carousel-example-generic" data-slide-to="2"></li>
         </ol>
-
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
           <div class="item active">
@@ -80,7 +117,6 @@
             </div>
           </div>  
         </div><!--End carousel-inner-->
-    
         <!-- Controls -->
         <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
           <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -92,7 +128,6 @@
         </a>
       </div><!--End Carousel-->
     </div><!--End Container-fluid--> 
-
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
@@ -112,12 +147,9 @@
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /col -->
       </div><!-- /row -->
-
-      <hr>
-
-    </div> <!-- /container -->
-
-    <div class="container-fluid">
+    </div> <!-- /index container -->
+    <hr>
+    <div class="container-fluid anchor" id="projects">
       <div class=”row” id="work"><!--1st Row-->
         <div class = "col-xs-12 col-sm-6 col-md-3">
           <img src="img/cde.jpg" alt="portfolio" class="img-responsive">
@@ -155,8 +187,122 @@
         </div>
       </div><!--End 2nd Row-->
     </div> <!--End Container of Columns-->
-
-
+    <hr>
+    <!--About Section-->
+    <div class="container-fluid anchor" id="about">
+      <div class="container about">
+      <div class="header">
+        <h1>About Tiffany Murphy</h1>
+      </div><!-- /header -->
+    </div><!-- /container -->
+    <div class="container info">
+      <!-- row of columns -->
+      <div class="row">    
+        <div class="col-md-4">
+          <img class="img-responsive" src="img/a1.jpeg" alt="a1"/>
+        </div><!--img column-->
+        <div class="col-md-4 intro">
+          <h2>Introduction</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan quis odio vel convallis. Donec elit ligula, ullamcorper ut porttitor sed, ultrices vel mi.</p>
+        </div><!--intro column-->  
+        <div class="col-md-4 skills">
+          <h3>My Skills</h3>
+            <ul id="skill-list">
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Vivamus interdum magna in libero tincidunt molestie.</li>
+              <li>Typewriter blue bottle unicorn williamsburg cardigan.</li>
+            </ul>
+        </div><!--skills column-->
+      </div><!--row-->
+      <div class="main-text">
+        <h3>More about me...</h3>
+        <p>Offal master cleanse echo park activated charcoal tattooed, actually tumblr cardigan taxidermy artisan raclette. Chillwave cray mlkshk, cronut tilde lomo air plant vape tumblr woke. Hot chicken shoreditch chicharrones occupy, typewriter leggings church-key chia. Edison bulb snackwave tilde polaroid bitters, swag intelligentsia fashion axe wolf thundercats affogato vape distillery taxidermy selvage. Hammock next level marfa pop-up, kale chips retro gentrify cred. Cray four dollar toast schlitz craft beer fap distillery.</p>
+      </div><!--end main-text-->
+    </div><!-- end container -->
+    </div><!--End About Section-->
+    <hr>
+    <div class="container-fluid anchor" id="work1">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <img src="img/open.jpg" alt="work1" class="img-responsive">
+          <h4>Cray four dollar toast schlitzvape distillery taxidermy selvage craft beer fap distillery. Typewriter blue bottle unicorn williamsburg cardigan.</h4>
+        </div><!--end column-->
+      </div><!--end row-->
+    </div><!--end container work1-->
+    <div class="container-fluid anchor" id="work2">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <img src="img/exp.jpg" alt="work2" class="img-responsive">
+          <h4>DIY church-key intelligentsia celiac fanny pack. Whatever pour-over blue bottle roof party mlkshk schlitz pickled trust fund.</h4>
+        </div><!--end column-->
+      </div><!--end row-->
+    </div><!--end container work1 work2-->
+    <hr>
+    <!--Contact Section-->
+    <div class="container-fluid anchor" id="contact">
+      <div class="bg-contact">
+      <div class="contact-box">
+        <h1>Contact Info</h1>
+        <p><span class="glyphicon glyphicon-triangle-right"></span>Need a web developer?</p>
+        <h2>Email</h2>
+        <p><span class="glyphicon glyphicon-envelope"></span> tiffanymurphy73@gmail.com</p>
+      </div><!--end contact-box-->
+      </div><!--end bg-contact--> 
+    </div><!--End Contact Section-->
+    <hr>
+    <!--FAQ Section-->
+    <div class="container-fluid anchor" id="faq">
+      <div class="bg-faq">
+      <div class="content-faq">
+        <div class="container">
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-menu-down"></span>
+                 Why did you decide to become a web developer?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+              <div class="panel-body">
+                I've always been interested in creating and designing websites and figuring out how they work. Web developement offers me the opportunity to do something interesting. 
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-menu-down"></span>
+                  What is your average project turnaround?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-menu-down"></span>
+                  What type of jobs are you looking for?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+              <div class="panel-body">
+                I love the idea of working remotely. It would offer me the freedom to work from anywhere while also opening up a ton of new  opportunities for me.
+              </div>
+            </div>
+          </div>
+        </div><!--end container-->
+      </div><!--end content-faq-->
+    </div><!--end bg-faq-->    
+    </div><!--End FAQ Section-->
+  
     <!-- ============================= -->
     <!-- All your JavaScript comes now -->
     <!-- ============================= -->
@@ -164,6 +310,19 @@
     <!-- Bootstrap core JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <!-- Can place script tags with JavaScript files here -->
+    <script type="text/javascript">
+      var $root = $('html, body');
+        $('.navbar-nav a').click(function() {
+          var href = $.attr(this, 'href');
+          $root.animate({
+            scrollTop: $(href).offset().top
+          }, 500, function () {
+            window.location.hash = href;
+          });
+          return false;
+        });
+    </script>
+
 
   </body>
 </html>

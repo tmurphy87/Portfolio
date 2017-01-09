@@ -1,19 +1,73 @@
-/* Large desktop */
-@media (min-width: 1200px) { ... }
-
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) { ... }
-
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) { ... }
-
-/* Landscape phones and down */
-@media (max-width: 480px) { ... }
+* { box-sizing: border-box; }
 
 body {
-	background-color: rgba(135, 162, 169, 0.3);
+	background-color: rgba(135, 162, 169, 0.44);
+	position: relative;
+	color: #34495e;
 }
 
+/*NAV BAR*/
+.anchor {
+  padding-top: 60px;
+}
+
+.navbar {
+	background-color: #b94642;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #f5f5f5;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+	color: #020000;
+	text-decoration: none;
+}
+
+.navbar-brand {
+	display: inline-block;
+	text-decoration: none;
+	letter-spacing: 0.10em;
+	padding: 20px 19px 20px;
+}
+
+.navbar-brand a {
+	color: #f5f5f5;
+}
+
+.navbar-brand a:hover {
+	color: #333;
+	text-decoration: none;
+}
+
+/*.navbar {
+	background-color: #b94642;
+	position: relative;
+	width: 100%;
+	top: 0;
+	z-index: 1;
+	float: right;
+}
+
+.navbar-nav li {
+	display: inline-block;
+}
+
+.navbar-nav li a {
+	display: inline-block;
+	color: #f5f5f5;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0.05em;
+	padding: 20px 19px 20px;
+}
+
+.navbar-nav a {
+	transition: color 600ms;
+	-webkit-transition: color 600ms;
+}*/
+
+/**** INDEX SECTION ****/
 #home {
 	padding: 0px;
 	position: relative;
@@ -46,22 +100,15 @@ body {
 	top: 80%;
 }
 
-/**** ABOUT PAGE ****/
-* { box-sizing: border-box; }
-
-body {
-	background-color: rgba(135, 162, 169, 0.44);
-	color: #34495e;
-}
+/**** ABOUT SECTION ****/
 
 .about {
 	width: 80%;
-	margin: 100px auto;
 }
 
 .header h1 {
 	text-align: center;
-	margin: 100px 0px;
+	margin: 70px 20px;
 }
 
 .image {
@@ -88,27 +135,45 @@ body {
 	margin-left: 10px;
 }
 
-/**** CONTACT PAGE ****/
-* { box-sizing: border-box; }
+/**** WORK ****/
 
-html,body { 
-	margin:0; 
-	padding:0; 
-	height:100%; 
-	width:100%; 
+#work1 img {
+	margin: auto;
+	width: 50%;
 }
 
-.bg-contact{
-	background-image: url("../img/type.jpg");
-	background-size: cover;
-	height: 100%;
-	width: 100%;
+#work1 h4, 
+#work2 h4 {
+	margin: auto;
+	width: 50%;
+	padding-top: 2%;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+#work2 img {
+	margin: auto;
+	width: 50%;
+}
+
+/**** CONTACT PAGE ****/
+
+#contact{
+    background-image: url("../img/mac.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    margin: 0 auto;
+    padding:100px;
+    height: 600px;
+    color: white;
 }
 
 .contact-box {
-	position: absolute;
-	left: 42%;
-	top: 60%;
+	position: relative;
+	width: 30%;
+	text-align: center;
+	margin: 0 auto;
 	background-color: rgba(204, 204, 204, 0.65);
 }
 
@@ -116,46 +181,10 @@ html,body {
 	color: #a94442;
 }
 
-/*NAV BAR*/
-.nav {
-	background-color: #b94642;
-	position: relative;
-	width: 100%;
-	top: 0;
-	z-index: 1;
-}
-
-.nav ul {
-	float:right;
-	padding: 0;
-}
-
-.nav ul li {
-	display: inline-block;
-}
-
-.nav ul li a {
-	display: inline-block;
-	color: white;
-	text-transform: uppercase;
-	text-decoration: none;
-	letter-spacing: 0.05em;
-	padding: 20px 19px 20px;
-}
-
-.nav a {
-	transition: color 600ms;
-	-webkit-transition: color 600ms;
-}
-
-.nav a:hover {
-	color: #020000;
-	text-decoration: none;
-}
-
 /**** FAQ PAGE ****/
-.content-faq {
-	padding-top: 10%;
+
+#faq {
+    padding: 100px;
 }
 
 .panel-default>.panel-heading {
@@ -163,16 +192,27 @@ html,body {
 	border-style: none;
 }
 
-/*Typography+Index+ContactPage*/
 
-.nav li a {
+/*Typography*/
+
+.navbar li a,
+h1,
+h2,
+h4,
+.panel-title  {
 	font-family: 'Armata', Helvetica, Arial, sans-serif;
+}
+
+.navbar-brand a {
+	font-family: 'Shadows Into Light', sans-serif;
+	text-decoration: none;
+
 }
 
 .carousel-caption h3 {
 	font-family: 'Fredericka the Great', cursive, Georgia, serif;
 	text-shadow: 0 4px 4px rgb(0, 1, 6);
-	font-size: 30px
+	font-size: 30px;
 }
 
 .carousel-caption p {
@@ -180,18 +220,10 @@ html,body {
 	text-shadow: 0 4px 4px rgb(0, 1, 6);
 }
 
-h1,
-h2 {
-	font-family: 'Armata', Helvetica, Arial, sans-serif;
-	font-size: 3em;
-	font-weight: 50;
-}
-
 h3 {
 	font-family: 'Fredericka the Great', cursive, Georgia, serif;
 	color: #fff;
 	text-shadow: 0 4px 4px rgb(0, 1, 6);
-};
 }
 
 .contact-box {
@@ -199,32 +231,10 @@ h3 {
 	padding: 20px;
 }
 
-p {
-	font-family: 'Gentium Basic', Georgia, serif;
-	font-size: large;
-}
-
-/*Typography+FAQ+About Page*/
-
-.panel-title {
-	font-family: 'Armata', Helvetica, Arial, sans-serif;
-}
-
-.panel-body {
+.panel-body, p {
 	font-family: 'Gentium Basic', Georgia, serif;
 	font-weight: bolder;
 	font-size: medium;
-}
-
-h1,
-h2,
-h3 {
-	font-family: 'Armata', Helvetica, Arial, sans-serif;
-}
-
-p,
-li {
-	font-family: Georgia, 'Palatino', serif;
 }
 
 .intro p {
