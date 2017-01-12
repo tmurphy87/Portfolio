@@ -39,24 +39,21 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <div class="Tiffany Murphy navbar-brand">
+        <div class="tiffanyMurphy navbar-brand">
           <a href="#">Tiffany Murphy</a>
-        </div> <!--end tiffanymurphy -->
+        </div> <!--end navbar-brand -->
       </div><!-- end navbar-header -->
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#home">Home</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#about">About</a></li>
-          <li role="presentation" class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-            Work<span class="caret"></span>
-            </a>
-          <ul class="dropdown-menu">
-            <li class=""><a href="#work1">Work 1</a></li>
-            <li class=""><a href="#work2">Work 2</a></li>
-          </ul>
-          </li><!--end dropdown-->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Work<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li class=""><a href="#work1">Work 1</a></li>
+              <li class=""><a href="#work2">Work 2</a></li>
+            </ul>
           <li><a href="#contact">Contact</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
@@ -85,243 +82,242 @@
         <li><a href="#FAQ">FAQ</a></li>
       </ul>
     </div> <!--End Nav-->
-    <!--Index Section-->
-    <!-- start carousel -->
-    <div class="container-fluid" id="home">
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        </ol>
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <img src="img/wrk3.jpg" alt="...">
-            <div class="carousel-caption">
-              <h3>Tiffany Murphy //Web Developer</h3>
-              <p>Here to turn your ideas into a stylish, hand-crafted website.</p>
+  <!--Index Section-->
+  <!-- start carousel -->
+  <div class="container-fluid" id="home">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="img/wrk3.jpg" alt="...">
+          <div class="carousel-caption">
+            <h3>Tiffany Murphy //Web Developer</h3>
+            <p>Here to turn your ideas into a stylish, hand-crafted website.</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/map.jpg" alt="...">
+          <div class="carousel-caption">
+            <h3>A goal without a plan is just a wish.</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/type2.jpg" alt="...">
+          <div class="carousel-caption">
+            <h3>Simplicity is about subtracting the obvious and adding the meaningful.</h3>
+          </div>
+        </div>  
+      </div><!--End carousel-inner-->
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!--End Carousel-->
+  </div><!--End Container-fluid--> 
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-xs-12 col-md-4">
+        <h2>Portfolio Concept</h2>
+        <p>Clean. Minimalistic. Visually Striking. Easy Navigation.</p>
+        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+      </div><!-- /col -->
+      <div class="col-xs-12 col-md-4">
+        <h2>Project Goals</h2>
+        <p>I'm striving to finish my web development course in 6 months. I will commit to working on my course 4 days a week and to also submit 3 tasks each week.</p>
+        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+      </div><!-- /col -->
+      <div class="col-xs-12 col-md-4">
+        <h2>Course Goals</h2>
+        <p>My number one goal for this course is to become a junior web developer. I want to have the freedom to work remotely from home. I would also like to do some freelance work on the side.</p>
+        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+      </div><!-- /col -->
+    </div><!-- /row -->
+  </div> <!-- /index container -->
+  <hr>
+  <div class="container-fluid anchor" id="projects">
+    <div class=”row” id="work"><!--1st Row-->
+      <div class = "col-xs-12 col-sm-6 col-md-3">
+        <img src="img/cde.jpg" alt="portfolio" class="img-responsive">
+        <h3>Project 1</h3>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <img src="img/cde2.jpg" alt="portfolio" class="img-responsive">
+        <h3>Project 2</h3>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <img src="img/cde3.jpg" alt="portfolio" class="img-responsive">
+        <h3>Project 3</h3>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <img src="img/cde4.jpg" alt="portfolio" class="img-responsive">
+        <h3>Project 4</h3>
+      </div>
+    </div><!--End 1st Row-->
+    <div class=”row” id="work"><!--2nd Row-->
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <img src="img/wrk1.jpg" alt="portfolio" class="img-responsive">
+        <h3>Project 5</h3>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <img src="img/wrk2.jpg" alt="portfolio" class="img-responsive" >
+        <h3>Project 6</h3>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <img src="img/work3.jpg" alt="portfolio" class="img-responsive">
+        <h3>Project 7</h3>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <img src="img/wrk4.jpg" alt="portfolio" class="img-responsive">
+        <h3>Project 8</h3>
+      </div>
+    </div><!--End 2nd Row-->
+  </div> <!--End Container of Columns-->
+  <hr>
+  <!--About Section-->
+  <div class="container-fluid anchor" id="about">
+    <div class="container about">
+    <div class="header">
+      <h1>About Tiffany Murphy</h1>
+    </div><!-- /header -->
+  </div><!-- /container -->
+  <div class="container info">
+    <!-- row of columns -->
+    <div class="row">    
+      <div class="col-md-4">
+        <img class="img-responsive" src="img/a1.jpeg" alt="a1"/>
+      </div><!--img column-->
+      <div class="col-md-4 intro">
+        <h2>Introduction</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan quis odio vel convallis. Donec elit ligula, ullamcorper ut porttitor sed, ultrices vel mi.</p>
+      </div><!--intro column-->  
+      <div class="col-md-4 skills">
+        <h3>My Skills</h3>
+          <ul id="skill-list">
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Vivamus interdum magna in libero tincidunt molestie.</li>
+            <li>Typewriter blue bottle unicorn williamsburg cardigan.</li>
+          </ul>
+      </div><!--skills column-->
+    </div><!--row-->
+    <div class="main-text">
+      <h3>More about me...</h3>
+      <p>Offal master cleanse echo park activated charcoal tattooed, actually tumblr cardigan taxidermy artisan raclette. Chillwave cray mlkshk, cronut tilde lomo air plant vape tumblr woke. Hot chicken shoreditch chicharrones occupy, typewriter leggings church-key chia. Edison bulb snackwave tilde polaroid bitters, swag intelligentsia fashion axe wolf thundercats affogato vape distillery taxidermy selvage. Hammock next level marfa pop-up, kale chips retro gentrify cred. Cray four dollar toast schlitz craft beer fap distillery.</p>
+    </div><!--end main-text-->
+  </div><!-- end container -->
+  </div><!--end About Section-->
+  <hr>
+  <!-- Work Section -->
+  <div class="container-fluid anchor" id="work1">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <img src="img/open.jpg" alt="work1" class="img-responsive">
+        <h4>Cray four dollar toast schlitzvape distillery taxidermy selvage craft beer fap distillery. Typewriter blue bottle unicorn williamsburg cardigan.</h4>
+      </div><!--end column-->
+    </div><!--end row-->
+  </div><!--end container work1-->
+  <div class="container-fluid anchor" id="work2">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <img src="img/exp.jpg" alt="work2" class="img-responsive">
+        <h4>DIY church-key intelligentsia celiac fanny pack. Whatever pour-over blue bottle roof party mlkshk schlitz pickled trust fund.</h4>
+      </div><!--end column-->
+    </div><!--end row-->
+  </div><!--end container work1 work2-->
+  <hr>
+  <!--Contact Section-->
+  <div class="container-fluid anchor" id="contact">
+    <div class="contact-box">
+      <h1>Contact Info</h1>
+      <p><span class="glyphicon glyphicon-triangle-right"></span>Need a web developer?</p>
+      <h2>Email</h2>
+      <p><span class="glyphicon glyphicon-envelope"></span> tiffanymurphy73@gmail.com</p>
+    </div><!--end contact-box--> 
+  </div><!--End Contact Section-->
+  <hr>
+  <!--FAQ Section-->
+  <div class="container-fluid anchor" id="faq">
+    <div class="bg-faq">
+    <div class="content-faq">
+      <div class="container">
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-menu-down"></span>
+                Why did you decide to become a web developer?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">
+              I've always been interested in creating and designing websites and figuring out how they work. Web developement offers me the opportunity to do something interesting. 
             </div>
           </div>
-          <div class="item">
-            <img src="img/map.jpg" alt="...">
-            <div class="carousel-caption">
-              <h3>A goal without a plan is just a wish.</h3>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-menu-down"></span>
+                What is your average project turnaround?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
             </div>
           </div>
-          <div class="item">
-            <img src="img/type2.jpg" alt="...">
-            <div class="carousel-caption">
-              <h3>Simplicity is about subtracting the obvious and adding the meaningful.</h3>
-            </div>
-          </div>  
-        </div><!--End carousel-inner-->
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div><!--End Carousel-->
-    </div><!--End Container-fluid--> 
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-xs-12 col-md-4">
-          <h2>Portfolio Concept</h2>
-          <p>Clean. Minimalistic. Visually Striking. Easy Navigation.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /col -->
-        <div class="col-xs-12 col-md-4">
-          <h2>Project Goals</h2>
-          <p>I'm striving to finish my web development course in 6 months. I will commit to working on my course 4 days a week and to also submit 3 tasks each week.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /col -->
-        <div class="col-xs-12 col-md-4">
-          <h2>Course Goals</h2>
-          <p>My number one goal for this course is to become a junior web developer. I want to have the freedom to work remotely from home. I would also like to do some freelance work on the side.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /col -->
-      </div><!-- /row -->
-    </div> <!-- /index container -->
-    <hr>
-    <div class="container-fluid anchor" id="projects">
-      <div class=”row” id="work"><!--1st Row-->
-        <div class = "col-xs-12 col-sm-6 col-md-3">
-          <img src="img/cde.jpg" alt="portfolio" class="img-responsive">
-          <h3>Project 1</h3>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <img src="img/cde2.jpg" alt="portfolio" class="img-responsive">
-          <h3>Project 2</h3>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <img src="img/cde3.jpg" alt="portfolio" class="img-responsive">
-          <h3>Project 3</h3>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <img src="img/cde4.jpg" alt="portfolio" class="img-responsive">
-          <h3>Project 4</h3>
-        </div>
-      </div><!--End 1st Row-->
-      <div class=”row” id="work"><!--2nd Row-->
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <img src="img/wrk1.jpg" alt="portfolio" class="img-responsive">
-          <h3>Project 5</h3>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <img src="img/wrk2.jpg" alt="portfolio" class="img-responsive" >
-          <h3>Project 6</h3>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <img src="img/work3.jpg" alt="portfolio" class="img-responsive">
-          <h3>Project 7</h3>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <img src="img/wrk4.jpg" alt="portfolio" class="img-responsive">
-          <h3>Project 8</h3>
-        </div>
-      </div><!--End 2nd Row-->
-    </div> <!--End Container of Columns-->
-    <hr>
-    <!--About Section-->
-    <div class="container-fluid anchor" id="about">
-      <div class="container about">
-      <div class="header">
-        <h1>About Tiffany Murphy</h1>
-      </div><!-- /header -->
-    </div><!-- /container -->
-    <div class="container info">
-      <!-- row of columns -->
-      <div class="row">    
-        <div class="col-md-4">
-          <img class="img-responsive" src="img/a1.jpeg" alt="a1"/>
-        </div><!--img column-->
-        <div class="col-md-4 intro">
-          <h2>Introduction</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan quis odio vel convallis. Donec elit ligula, ullamcorper ut porttitor sed, ultrices vel mi.</p>
-        </div><!--intro column-->  
-        <div class="col-md-4 skills">
-          <h3>My Skills</h3>
-            <ul id="skill-list">
-              <li>Lorem ipsum dolor sit amet.</li>
-              <li>Vivamus interdum magna in libero tincidunt molestie.</li>
-              <li>Typewriter blue bottle unicorn williamsburg cardigan.</li>
-            </ul>
-        </div><!--skills column-->
-      </div><!--row-->
-      <div class="main-text">
-        <h3>More about me...</h3>
-        <p>Offal master cleanse echo park activated charcoal tattooed, actually tumblr cardigan taxidermy artisan raclette. Chillwave cray mlkshk, cronut tilde lomo air plant vape tumblr woke. Hot chicken shoreditch chicharrones occupy, typewriter leggings church-key chia. Edison bulb snackwave tilde polaroid bitters, swag intelligentsia fashion axe wolf thundercats affogato vape distillery taxidermy selvage. Hammock next level marfa pop-up, kale chips retro gentrify cred. Cray four dollar toast schlitz craft beer fap distillery.</p>
-      </div><!--end main-text-->
-    </div><!-- end container -->
-    </div><!--End About Section-->
-    <hr>
-    <div class="container-fluid anchor" id="work1">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
-          <img src="img/open.jpg" alt="work1" class="img-responsive">
-          <h4>Cray four dollar toast schlitzvape distillery taxidermy selvage craft beer fap distillery. Typewriter blue bottle unicorn williamsburg cardigan.</h4>
-        </div><!--end column-->
-      </div><!--end row-->
-    </div><!--end container work1-->
-    <div class="container-fluid anchor" id="work2">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
-          <img src="img/exp.jpg" alt="work2" class="img-responsive">
-          <h4>DIY church-key intelligentsia celiac fanny pack. Whatever pour-over blue bottle roof party mlkshk schlitz pickled trust fund.</h4>
-        </div><!--end column-->
-      </div><!--end row-->
-    </div><!--end container work1 work2-->
-    <hr>
-    <!--Contact Section-->
-    <div class="container-fluid anchor" id="contact">
-      <div class="bg-contact">
-      <div class="contact-box">
-        <h1>Contact Info</h1>
-        <p><span class="glyphicon glyphicon-triangle-right"></span>Need a web developer?</p>
-        <h2>Email</h2>
-        <p><span class="glyphicon glyphicon-envelope"></span> tiffanymurphy73@gmail.com</p>
-      </div><!--end contact-box-->
-      </div><!--end bg-contact--> 
-    </div><!--End Contact Section-->
-    <hr>
-    <!--FAQ Section-->
-    <div class="container-fluid anchor" id="faq">
-      <div class="bg-faq">
-      <div class="content-faq">
-        <div class="container">
-        <div class="panel-group" id="accordion">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-menu-down"></span>
-                 Why did you decide to become a web developer?
-                </a>
-              </h4>
-            </div>
-            <div id="collapseOne" class="panel-collapse collapse in">
-              <div class="panel-body">
-                I've always been interested in creating and designing websites and figuring out how they work. Web developement offers me the opportunity to do something interesting. 
-              </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-menu-down"></span>
+                What type of jobs are you looking for?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse">
+            <div class="panel-body">
+              I love the idea of working remotely. It would offer me the freedom to work from anywhere while also opening up a ton of new  opportunities for me.
             </div>
           </div>
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-menu-down"></span>
-                  What is your average project turnaround?
-                </a>
-              </h4>
-            </div>
-            <div id="collapseTwo" class="panel-collapse collapse">
-              <div class="panel-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-              </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-menu-down"></span>
-                  What type of jobs are you looking for?
-                </a>
-              </h4>
-            </div>
-            <div id="collapseThree" class="panel-collapse collapse">
-              <div class="panel-body">
-                I love the idea of working remotely. It would offer me the freedom to work from anywhere while also opening up a ton of new  opportunities for me.
-              </div>
-            </div>
-          </div>
-        </div><!--end container-->
-      </div><!--end content-faq-->
+        </div>
+      </div><!--end container-->
+    </div><!--end content-faq-->
     </div><!--end bg-faq-->    
-    </div><!--End FAQ Section-->
+  </div><!--End FAQ Section-->
   
-    <!-- ============================= -->
-    <!-- All your JavaScript comes now -->
-    <!-- ============================= -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Bootstrap core JS -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <!-- Can place script tags with JavaScript files here -->
-    <script type="text/javascript">
-      var $root = $('html, body');
-        $('.navbar-nav a').click(function() {
-          var href = $.attr(this, 'href');
-          $root.animate({
-            scrollTop: $(href).offset().top
-          }, 500, function () {
-            window.location.hash = href;
-          });
-          return false;
+  <!-- ============================= -->
+  <!-- All your JavaScript comes now -->
+  <!-- ============================= -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Bootstrap core JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <!-- Can place script tags with JavaScript files here -->
+  <script type="text/javascript">
+    var $root = $('html, body');
+      $('.navbar-nav a').click(function() {
+        var href = $.attr(this, 'href');
+        $root.animate({
+          scrollTop: $(href).offset().top
+        }, 500, function () {
+          window.location.hash = href;
         });
-    </script>
+        return false;
+      });
+  </script>
 
 
   </body>

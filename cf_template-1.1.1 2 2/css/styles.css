@@ -68,10 +68,12 @@ body {
 }*/
 
 /**** INDEX SECTION ****/
+
 #home {
 	padding: 0px;
-	position: relative;
+	position: relative;	
 }
+
 
 .carousel {
 	padding-top: 0;
@@ -79,7 +81,7 @@ body {
 	overflow: hidden;
 }
 
-.carousel-caption {
+.carousel-caption h3 {
 	top: 70%;
 	display: inline-block;
 }
@@ -137,7 +139,8 @@ body {
 
 /**** WORK ****/
 
-#work1 img {
+#work1 img,
+#work2 img {
 	margin: auto;
 	width: 50%;
 }
@@ -151,37 +154,26 @@ body {
 	text-align: center;
 }
 
-#work2 img {
-	margin: auto;
-	width: 50%;
-}
+/**** CONTACT SECTION ****/
 
-/**** CONTACT PAGE ****/
-
-#contact{
+#contact {
     background-image: url("../img/mac.jpg");
     background-attachment: fixed;
     background-size: cover;
-    position: relative;
-    margin: 0 auto;
-    padding:100px;
-    height: 600px;
+    padding: 20%;
+    max-height: 100%;
     color: white;
 }
 
 .contact-box {
-	position: relative;
-	width: 30%;
-	text-align: center;
-	margin: 0 auto;
-	background-color: rgba(204, 204, 204, 0.65);
+	display: inline-block;
 }
 
 .contact-box p:hover {
 	color: #a94442;
 }
 
-/**** FAQ PAGE ****/
+/**** FAQ SECTION ****/
 
 #faq {
     padding: 100px;
@@ -212,7 +204,6 @@ h4,
 .carousel-caption h3 {
 	font-family: 'Fredericka the Great', cursive, Georgia, serif;
 	text-shadow: 0 4px 4px rgb(0, 1, 6);
-	font-size: 30px;
 }
 
 .carousel-caption p {
@@ -224,11 +215,6 @@ h3 {
 	font-family: 'Fredericka the Great', cursive, Georgia, serif;
 	color: #fff;
 	text-shadow: 0 4px 4px rgb(0, 1, 6);
-}
-
-.contact-box {
-	background-color: rgba(221, 221, 221, 0.73);
-	padding: 20px;
 }
 
 .panel-body, p {
@@ -254,5 +240,23 @@ h3 {
 	color: #FFF;
 	padding: 20px;
 }
+
+/* Media Queries */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
