@@ -1,9 +1,8 @@
 * { box-sizing: border-box; }
 
 body {
-	background-color: rgba(135, 162, 169, 0.44);
-	position: relative;
-	color: #34495e;
+    background-image: url("../img/linen.jpg");
+    color: #34495e;
 }
 
 /*NAV BAR*/
@@ -12,7 +11,7 @@ body {
 }
 
 .navbar {
-	background-color: #b94642;
+    background-color: #b94642;
 }
 
 .navbar-inverse .navbar-nav>li>a {
@@ -20,142 +19,112 @@ body {
 }
 
 .navbar-inverse .navbar-nav>li>a:hover {
-	color: #020000;
-	text-decoration: none;
+    color: #020000;
+    text-decoration: none;
 }
 
 .navbar-brand {
-	display: inline-block;
-	text-decoration: none;
-	letter-spacing: 0.10em;
-	padding: 20px 19px 20px;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 0.10em;
+    padding: 20px 19px 20px;
 }
 
 .navbar-brand a {
-	color: #f5f5f5;
+    color: #f5f5f5;
 }
 
 .navbar-brand a:hover {
-	color: #333;
-	text-decoration: none;
+    color: #333;
+    text-decoration: none;
 }
-
-/*.navbar {
-	background-color: #b94642;
-	position: relative;
-	width: 100%;
-	top: 0;
-	z-index: 1;
-	float: right;
-}
-
-.navbar-nav li {
-	display: inline-block;
-}
-
-.navbar-nav li a {
-	display: inline-block;
-	color: #f5f5f5;
-	text-transform: uppercase;
-	text-decoration: none;
-	letter-spacing: 0.05em;
-	padding: 20px 19px 20px;
-}
-
-.navbar-nav a {
-	transition: color 600ms;
-	-webkit-transition: color 600ms;
-}*/
 
 /**** INDEX SECTION ****/
-
 #home {
-	padding: 0px;
-	position: relative;	
+    padding: 0px;   
 }
 
-
-.carousel {
-	padding-top: 0;
-	max-height: 100%;
-	overflow: hidden;
+.carousel-inner>.item>img {
+    padding-top: 3%;
 }
 
 .carousel-caption h3 {
-	top: 70%;
-	display: inline-block;
+    display: inline-block;
+    top: 70%;
 }
 
 /*portfolio img grid*/
-
-#work img {
-	display: block;
-	margin: 15px auto;
-	height: 100%;
+#projects img {
+    display: block;
+    margin: 15px auto;
+    height: 100%;
+    width: auto;
 }
 
-#work h3 {
-	display: inline-block;
-	margin: 0;
-	margin-left: 27%;
-	position: absolute;
-	top: 80%;
+#projects h3 {
+    position: absolute;
+    display: inline-block;
+    top: 80%;
+    margin: 0;
+    margin-left: 27%;
 }
 
 /**** ABOUT SECTION ****/
-
 .about {
-	width: 80%;
+    width: 80%;
 }
 
 .header h1 {
-	text-align: center;
-	margin: 70px 20px;
+    margin: 50px 0px;
+    text-align: center;
 }
 
-.image {
-	display: inline-block;
-	float: left;
+#a1 {
+    display: inline-block;
+    float: left;
+    width: auto;
+    height: auto;
 }
 
 .main-text {
-	position: relative;
-	clear: both;
-	padding-top: 60px;
+    position: relative;
+    clear: both;
+    padding-top: 5%;
 }
 
-.full-width {
-	width: 100%;
+.main-text p {
+    font-size: 1.3em;
 }
 
 .skills {
-	background-color: #8a6d3b;
-	color: #f5f5f5;
+    display: inline-block;
+    padding: 20px; 
+    background-color: rgba(52, 61, 97, 1);
+    color: #FFF;
 }
 
 #skill-list {
-	margin-left: 10px;
+    margin-left: 3%;
+    font-size: 1.5em;
 }
 
 /**** WORK ****/
-
 #work1 img,
 #work2 img {
-	margin: auto;
-	width: 50%;
+    margin: 0 auto;
+    width: 50%;
 }
 
 #work1 h4, 
 #work2 h4 {
-	margin: auto;
-	width: 50%;
-	padding-top: 2%;
-	padding-bottom: 50px;
-	text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
 }
 
 /**** CONTACT SECTION ****/
-
 #contact {
     background-image: url("../img/mac.jpg");
     background-attachment: fixed;
@@ -166,82 +135,75 @@ body {
 }
 
 .contact-box {
-	display: inline-block;
+    display: inline-block;
 }
 
 .contact-box p:hover {
-	color: #a94442;
+    color: #a94442;
 }
 
 /**** FAQ SECTION ****/
-
 #faq {
-    padding: 100px;
+    padding: 100px 0px;
 }
 
 .panel-default>.panel-heading {
-	background-color: rgba(157, 157, 157, 0.75);
-	border-style: none;
+    background-color: rgba(157, 157, 157, 0.75);
+    border-style: none;
 }
 
-
 /*Typography*/
-
 .navbar li a,
 h1,
 h2,
 h4,
 .panel-title  {
-	font-family: 'Armata', Helvetica, Arial, sans-serif;
+    font-family: 'Armata', Helvetica, Arial, sans-serif;
 }
 
 .navbar-brand a {
-	font-family: 'Shadows Into Light', sans-serif;
-	text-decoration: none;
-
+    font-family: 'Shadows Into Light', sans-serif;
+    text-decoration: none;
 }
 
-.carousel-caption h3 {
-	font-family: 'Fredericka the Great', cursive, Georgia, serif;
-	text-shadow: 0 4px 4px rgb(0, 1, 6);
+.carousel-caption h3,
+h3 {
+    font-family: 'Fredericka the Great', cursive, Georgia, serif;
+    text-shadow: 0 4px 4px rgb(0, 1, 6);
 }
 
 .carousel-caption p {
-	font-family: 'Josefin Slab', Georgia, serif;
-	text-shadow: 0 4px 4px rgb(0, 1, 6);
-}
-
-h3 {
-	font-family: 'Fredericka the Great', cursive, Georgia, serif;
-	color: #fff;
-	text-shadow: 0 4px 4px rgb(0, 1, 6);
+    font-family: 'Josefin Slab', Georgia, serif;
+    text-shadow: 0 4px 4px rgb(0, 1, 6);
 }
 
 .panel-body, p {
-	font-family: 'Gentium Basic', Georgia, serif;
-	font-weight: bolder;
-	font-size: medium;
+    font-family: 'Gentium Basic', Georgia, serif;
+    font-weight: bolder;
+    font-size: medium;
 }
 
 .intro p {
-	font-family: 'Caveat', Helvetica, Arial, sans-serif, cursive;
-	font-size: 2em;
-	font-weight: 100;
-	-webkit-margin-before: 0em;
+    font-family: 'Caveat', Helvetica, Arial, sans-serif, cursive;
+    font-size: 2em;
+    font-weight: 100;
+    -webkit-margin-before: 0em;
+}
+
+h3 {
+    color: #fff;
+    text-shadow: 0 4px 4px rgb(0, 1, 6);
 }
 
 .skills h3 {
-	text-align: center;
-	text-transform: uppercase;
-}
-
-.skills {
-	background-color: rgba(160, 150, 140, 0.82);
-	color: #FFF;
-	padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 /* Media Queries */
+@media screen and (max-width: 768px){
+    #projects {display: none;}
+}
 
 
 
