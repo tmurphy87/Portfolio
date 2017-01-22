@@ -45,7 +45,7 @@ body {
 }
 
 .carousel-inner>.item>img {
-    padding-top: 3%;
+    padding-top: 3.5%;
 }
 
 .carousel-caption h3 {
@@ -55,6 +55,7 @@ body {
 
 /*portfolio img grid*/
 #projects img {
+    border-radius: 5%;
     display: block;
     margin: 15px auto;
     height: 100%;
@@ -79,11 +80,8 @@ body {
     text-align: center;
 }
 
-#a1 {
-    display: inline-block;
-    float: left;
-    width: auto;
-    height: auto;
+.col-md-4 img {
+    border-radius: 7%;
 }
 
 .main-text {
@@ -97,9 +95,10 @@ body {
 }
 
 .skills {
+    border-radius: 55%;
     display: inline-block;
-    padding: 20px; 
-    background-color: rgba(52, 61, 97, 1);
+    padding: 50px; 
+    background-color: rgba(127, 127, 127, 1);
     color: #FFF;
 }
 
@@ -111,6 +110,7 @@ body {
 /**** WORK ****/
 #work1 img,
 #work2 img {
+    border-radius: 5%;
     margin: 0 auto;
     width: 50%;
 }
@@ -202,6 +202,18 @@ h3 {
 
 /* Media Queries */
 @media screen and (max-width: 768px){
+
+/**** Body ****/    
+    .anchor {padding: 10px;}
+
+    hr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 0;
+    border-top: 0px;
+}
+
+/**** Projects ****/    
     #projects {display: none;}
 }
 
