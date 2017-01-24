@@ -41,14 +41,13 @@
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#home">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#about">About</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Work<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li class=""><a href="#work1">Work 1</a></li>
+              <li class=""><a href="#projects">Work 1</a></li>
               <li class=""><a href="#work2">Work 2</a></li>
             </ul>
+          <li><a href="#about">About</a></li>  
           <li><a href="#contact">Contact</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
@@ -56,6 +55,7 @@
     </div><!-- /nav container -->
   </nav> <!-- /navbar -->
     
+    <!-- OLD NAV BAR -->
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <!--div class="jumbotron"
       <div class="container">
@@ -180,6 +180,16 @@
     </div><!-- /2nd row-->
   </div> <!-- /container of columns-->
   <hr>
+  <!-- work section -->  
+  <div class="container-fluid anchor" id="work2">
+    <div class="row">
+      <div class="col-xs-12 col-md-12">
+        <a href="http://simp-calculator.bitballoon.com/"><img src="img/cal.jpg" alt="calculator" class="img-responsive"></a>
+        <h4>Calculator Project</h4>
+      </div><!-- /col -->
+    </div><!-- /row -->
+  </div><!-- /container work2 -->
+  <hr>
   <!-- about section -->
   <div class="container-fluid anchor" id="about">
     <div class="header">
@@ -211,24 +221,6 @@
       </div><!-- /main-text -->
     </div><!-- /info -->
   </div><!-- /about section -->
-  <hr>
-  <!-- work section -->
-  <div class="container-fluid anchor" id="work1">
-    <div class="row">
-      <div class="col-xs-12 col-md-12">
-        <img src="img/open.jpg" alt="work1" class="img-responsive">
-        <h4>Typewriter blue bottle unicorn williamsburg cardigan.</h4>
-      </div><!-- /col -->
-    </div><!-- /row -->
-  </div><!-- /container work1 -->
-  <div class="container-fluid anchor" id="work2">
-    <div class="row">
-      <div class="col-xs-12 col-md-12">
-        <a href="http://simp-calculator.bitballoon.com/"><img src="img/cal.jpg" alt="calculator" class="img-responsive"></a>
-        <h4>Calculator Project</h4>
-      </div><!-- /col -->
-    </div><!-- /row -->
-  </div><!-- /container work1 work2 -->
   <hr>
   <!-- contact section -->
   <div class="container-fluid anchor" id="contact">
@@ -285,8 +277,26 @@
           </div>
         </div>
       </div>
-    </div><!-- /panel group -->   
+    </div><!-- /panel group -->
   </div><!-- /FAQ Section -->
+  <!-- youtube video -->
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fWRISvgAygU" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <!-- footer -->
+  <footer>
+    <div class="container-fluid bar">
+      <div class="footer-element">&copy;Tiffany Murphy 2017</div>
+      <!-- twitter button -->
+      <div class="footer-element">
+        <a href="https://twitter.com/tmurphy904" class="twitter-follow-button" data-show-count="false">Follow @tmurphy904</a>
+      </div>
+      <!-- github button -->
+      <div class="footer-element">
+        <a class="github-button" href="https://github.com/tmurphy87" data-style="mega" aria-label="Follow @tmurphy87 on GitHub">Follow @tmurphy87</a>
+      </div>
+    </div><!-- /bar container -->
+  </footer><!-- /footer -->
   
   <!-- ============================= -->
   <!-- All your JavaScript comes now -->
@@ -295,6 +305,7 @@
   <!-- Bootstrap core JS -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <!-- Can place script tags with JavaScript files here -->
+  <!-- smooth scrolling nav -->
   <script type="text/javascript">
     var $root = $('html, body');
       $('.navbar-nav a').click(function() {
@@ -307,7 +318,10 @@
         return false;
       });
   </script>
-
+  <!-- twitter button -->
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  <!-- github button -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
 
   </body>
 </html>

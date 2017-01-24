@@ -70,6 +70,21 @@ body {
     margin-left: 27%;
 }
 
+/**** WORK ****/
+#work2 img {
+    border-radius: 5%;
+    margin: 0 auto;
+    width: 50%;
+}
+ 
+#work2 h4 {
+    margin: 0 auto;
+    width: 50%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
 /**** ABOUT SECTION ****/
 .about {
     width: 80%;
@@ -107,23 +122,6 @@ body {
     font-size: 1.5em;
 }
 
-/**** WORK ****/
-#work1 img,
-#work2 img {
-    border-radius: 5%;
-    margin: 0 auto;
-    width: 50%;
-}
-
-#work1 h4, 
-#work2 h4 {
-    margin: 0 auto;
-    width: 50%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    text-align: center;
-}
-
 /**** CONTACT SECTION ****/
 #contact {
     background-image: url("../img/mac.jpg");
@@ -150,6 +148,19 @@ body {
 .panel-default>.panel-heading {
     background-color: rgba(157, 157, 157, 0.75);
     border-style: none;
+}
+
+/**** Footer Bar ****/
+.bar {
+    padding-top: 15px;
+    color: white;
+    background-color: #b94642;
+}
+
+.footer-element {
+    display: inline-block;
+    float: right;
+    padding: 0px 5px;
 }
 
 /*Typography*/
