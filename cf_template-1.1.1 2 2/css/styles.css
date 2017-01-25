@@ -53,8 +53,9 @@ body {
     top: 70%;
 }
 
+/**** WORK ****/
 /*portfolio img grid*/
-#projects img {
+#work1 img {
     border-radius: 5%;
     display: block;
     margin: 15px auto;
@@ -62,15 +63,14 @@ body {
     width: auto;
 }
 
-#projects h3 {
+#work1 h3 {
     position: absolute;
     display: inline-block;
     top: 80%;
     margin: 0;
     margin-left: 27%;
 }
-
-/**** WORK ****/
+/*calculator*/
 #work2 img {
     border-radius: 5%;
     margin: 0 auto;
@@ -126,18 +126,34 @@ body {
 #contact {
     background-image: url("../img/mac.jpg");
     background-attachment: fixed;
+    background-position: center;
     background-size: cover;
-    padding: 20%;
-    max-height: 100%;
+    padding: 5%;
+    padding-top: 10%;
+    height: 100%;
     color: white;
 }
 
-.contact-box {
+.bg-font {
     display: inline-block;
+    padding: 0px 5px;
 }
 
-.contact-box p:hover {
+.p-font:hover {
     color: #a94442;
+}
+
+#contact-form {
+    width: 60%;
+    resize: none;
+    color: white;
+}
+
+#bttn-submit {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    background-color: #b94642;
+    color: white;
 }
 
 /**** FAQ SECTION ****/
@@ -153,6 +169,7 @@ body {
 /**** Footer Bar ****/
 .bar {
     padding-top: 15px;
+    height: 60px;
     color: white;
     background-color: #b94642;
 }
@@ -225,8 +242,14 @@ h3 {
 }
 
 /**** Projects ****/    
-    #projects {display: none;}
+    #work1 {display: none;}
+    #work2 {margin-top: 7%;}
+
+/**** Footer ****/
+    #github {display: none;}    
 }
+
+
 
 
 

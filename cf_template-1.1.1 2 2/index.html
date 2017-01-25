@@ -44,7 +44,7 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Work<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li class=""><a href="#projects">Work 1</a></li>
+              <li class=""><a href="#work1">Work 1</a></li>
               <li class=""><a href="#work2">Work 2</a></li>
             </ul>
           <li><a href="#about">About</a></li>  
@@ -141,8 +141,9 @@
     </div><!-- /row -->
   </div> <!-- /index container -->
   <hr>
-  <div class="container-fluid anchor" id="projects">
-    <div class=”row” id="projects"><!-- 1st row -->
+  <!-- work section -->
+  <div class="container-fluid anchor" id="work1">
+    <div class=”row” id="work1"><!-- 1st row -->
       <div class = "col-xs-12 col-sm-6 col-md-3">
         <img src="img/cde.jpg" alt="portfolio" class="img-responsive">
         <h3>Project 1</h3>
@@ -178,9 +179,7 @@
         <h3>Project 8</h3>
       </div><!-- /col -->
     </div><!-- /2nd row-->
-  </div> <!-- /container of columns-->
-  <hr>
-  <!-- work section -->  
+  </div> <!-- /container of columns-->  
   <div class="container-fluid anchor" id="work2">
     <div class="row">
       <div class="col-xs-12 col-md-12">
@@ -188,7 +187,7 @@
         <h4>Calculator Project</h4>
       </div><!-- /col -->
     </div><!-- /row -->
-  </div><!-- /container work2 -->
+  </div><!-- /container work -->
   <hr>
   <!-- about section -->
   <div class="container-fluid anchor" id="about">
@@ -224,13 +223,34 @@
   <hr>
   <!-- contact section -->
   <div class="container-fluid anchor" id="contact">
-    <div class="contact-box">
-      <h1>Contact Info</h1>
-      <p><span class="glyphicon glyphicon-triangle-right"></span>Need a web developer?</p>
-      <h2>Email</h2>
-      <p><span class="glyphicon glyphicon-envelope"></span> tiffanymurphy73@gmail.com</p>
-    </div><!-- /contact-box --> 
-  </div><!-- /contact section -->
+    <div class="row">
+      <div class="col-lg-4 col-md-4">
+        <h1 class="bg-font">Contact</h1>
+        <p class="p-font"><span class="glyphicon glyphicon-triangle-right"></span>Need a web developer?</p>
+        <h1 class="bg-font">Email</h1>
+        <p class="p-font"><span class="glyphicon glyphicon-envelope"></span> tiffanymurphy73@gmail.com</p>
+      </div><!-- /col -->
+      <div class="col-lg-8 col-md-8">
+        <h1 class="bg-font">Say Hello</h1>
+        <br>
+        <form action=”/login” method=”post” name=”login” id="contact-form">
+          <div class="form-group">
+            <label for="name" class="sr-only">Name</label>
+            <input class="form-control" type="text" name="name" id="name" placeholder="Enter your name&ast;" required="required">
+          </div>
+          <div class="form-group">
+            <label for="email" class="sr-only">Email Address</label>
+            <input type="email" name="name" id="email" class="form-control" placeholder="Enter your email&ast;" required="required"> 
+          </div>
+          <div class="form-group">
+            <label for="message" class="sr-only">Message</label>
+            <textarea class="form-control" id="message" style="resize:none" cols="40" rows="10" placeholder="Place your message here&ast;" class="message-box" required="required"></textarea>
+          </div>  
+          <button type="submit" class="btn btn-default" id="bttn-submit">Submit</button>    
+        </form>
+      </div><!-- /col -->
+    </div><!-- /row -->  
+  </div><!-- /contact -->
   <hr>
   <!-- FAQ section -->
   <div class="container anchor" id="faq">
@@ -292,8 +312,8 @@
         <a href="https://twitter.com/tmurphy904" class="twitter-follow-button" data-show-count="false">Follow @tmurphy904</a>
       </div>
       <!-- github button -->
-      <div class="footer-element">
-        <a class="github-button" href="https://github.com/tmurphy87" data-style="mega" aria-label="Follow @tmurphy87 on GitHub">Follow @tmurphy87</a>
+      <div class="footer-element" id="github">
+        <a class="github-button" href="https://github.com/tmurphy87" aria-label="Follow @tmurphy87 on GitHub">Follow @tmurphy87</a>
       </div>
     </div><!-- /bar container -->
   </footer><!-- /footer -->
