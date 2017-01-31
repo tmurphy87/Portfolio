@@ -49,7 +49,7 @@
             </ul>
           <li><a href="#about">About</a></li>  
           <li><a href="#contact">Contact</a></li>
-          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#faq">Learn More</a></li>
         </ul>
       </div><!-- /navbar collapse -->
     </div><!-- /nav container -->
@@ -222,7 +222,7 @@
   </div><!-- /about section -->
   <hr>
   <!-- contact section -->
-  <div class="container-fluid anchor" id="contact">
+  <div class="container-fluid anchor" id="contact" data-stellar-ratio="2">
     <div class="row">
       <div class="col-lg-4 col-md-4">
         <h1 class="bg-font">Contact</h1>
@@ -233,7 +233,7 @@
       <div class="col-lg-8 col-md-8">
         <h1 class="bg-font">Say Hello</h1>
         <br>
-        <form action=”/login” method=”post” name=”login” id="contact-form">
+        <form action="/login" method="post" name="login" id="contact-form">
           <div class="form-group">
             <label for="name" class="sr-only">Name</label>
             <input class="form-control" type="text" name="name" id="name" placeholder="Enter your name&ast;" required="required">
@@ -244,7 +244,8 @@
           </div>
           <div class="form-group">
             <label for="message" class="sr-only">Message</label>
-            <textarea class="form-control" id="message" style="resize:none" cols="40" rows="10" placeholder="Place your message here&ast;" class="message-box" required="required"></textarea>
+            <textarea class="form-control" id="message" style="resize:none"
+             cols="40" rows="10" placeholder="Place your message here&ast;" class="message-box" required="required"></textarea>
           </div>  
           <button type="submit" class="btn btn-default" id="bttn-submit">Submit</button>    
         </form>
@@ -252,8 +253,32 @@
     </div><!-- /row -->  
   </div><!-- /contact -->
   <hr>
-  <!-- FAQ section -->
+  <!-- learn more section -->
   <div class="container anchor" id="faq">
+    <div class="row learn-more">
+      <h2 class="learn-more">Learn More</h2>
+      <div class="modal-button">
+        <!-- small modal button -->
+        <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Resume</button>
+      </div><!-- /small modal-button -->
+      <!-- large modal -->
+      <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" data-backdrop="true" data-keyboard="false">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Resume</h4>
+            </div><!-- /modal header -->
+            <div class="modal-body">
+              <embed id="modalembed" src="img/tm_res.pdf">
+            </div><!-- /modal body -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div><!-- /modal footer -->
+          </div><!-- /modal content -->
+        </div><!-- /modal dialoge -->
+      </div><!-- /modal -->
+    </div><!-- /row learn-more -->
     <div class="panel-group" id="accordion">
       <div class="panel panel-default">
         <div class="panel-heading">
@@ -304,7 +329,7 @@
     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fWRISvgAygU" frameborder="0" allowfullscreen></iframe>
   </div>
   <!-- footer -->
-  <footer>
+  <footer class="site-footer">
     <div class="container-fluid bar">
       <div class="footer-element">&copy;Tiffany Murphy 2017</div>
       <!-- twitter button -->
@@ -325,6 +350,9 @@
   <!-- Bootstrap core JS -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <!-- Can place script tags with JavaScript files here -->
+  <!-- stellar parallax -->
+  <script src="js/jquery.stellar.min.js"></script>
+  <script>$('#contact').stellar();</script>
   <!-- smooth scrolling nav -->
   <script type="text/javascript">
     var $root = $('html, body');

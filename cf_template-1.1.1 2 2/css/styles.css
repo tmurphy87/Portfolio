@@ -44,10 +44,6 @@ body {
     padding: 0px;   
 }
 
-.carousel-inner>.item>img {
-    padding-top: 3.5%;
-}
-
 .carousel-caption h3 {
     display: inline-block;
     top: 70%;
@@ -59,8 +55,6 @@ body {
     border-radius: 5%;
     display: block;
     margin: 15px auto;
-    height: 100%;
-    width: auto;
 }
 
 #work1 h3 {
@@ -144,7 +138,6 @@ body {
 }
 
 #contact-form {
-    width: 60%;
     resize: none;
     color: white;
 }
@@ -156,9 +149,32 @@ body {
     color: white;
 }
 
-/**** FAQ SECTION ****/
+/**** LEARN MORE SECTION ****/
 #faq {
     padding: 100px 0px;
+}
+
+.learn-more {
+    padding: 0px 8px;
+    position: relative;
+}
+
+.learn-more h2 {
+  text-align: left;
+  float: left;
+}
+
+.modal-button {
+  float: right;
+  bottom: 12px;
+  right: 15px;
+  position: absolute;
+}
+
+#modalembed {
+    height: 500px;
+    width: 100%;
+    padding: 10px;
 }
 
 .panel-default>.panel-heading {
@@ -167,9 +183,20 @@ body {
 }
 
 /**** Footer Bar ****/
+
+/* Sticky-Footer */
+.site-footer {
+    position: fixed; 
+    left: 0; 
+    bottom: 0; 
+    width: 100%;
+}
+
 .bar {
+    left: 0;
+    bottom: 0;
     padding-top: 15px;
-    height: 60px;
+    width: 100%;
     color: white;
     background-color: #b94642;
 }
