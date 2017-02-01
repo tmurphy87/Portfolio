@@ -125,18 +125,21 @@
     <div class="row">
       <div class="col-xs-12 col-md-4">
         <h2>Portfolio Concept</h2>
-        <p>Clean. Minimalistic. Visually Striking. Easy Navigation.</p>
-        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        <p>Clean. Minimalistic. Visually Striking. Easy Navigation. Contact me for <a href="#portfolio-1" title="Say Hello" id="item1">more information.</a></p>
+        <!--p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p-->
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="More Concepts">View details &raquo;</button>
       </div><!-- /col -->
       <div class="col-xs-12 col-md-4">
         <h2>Project Goals</h2>
         <p>I'm striving to finish my web development course in 6 months. I will commit to working on my course 4 days a week and to also submit 3 tasks each week.</p>
-        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        <!--p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p-->
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="More Projects">View details &raquo;</button>
       </div><!-- /col -->
       <div class="col-xs-12 col-md-4">
         <h2>Course Goals</h2>
         <p>My number one goal for this course is to become a junior web developer. I want to have the freedom to work remotely from home. I would also like to do some freelance work on the side.</p>
-        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        <!--p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p-->
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="More Goals">View details &raquo;</button>
       </div><!-- /col -->
     </div><!-- /row -->
   </div> <!-- /index container -->
@@ -370,6 +373,17 @@
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
   <!-- github button -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- tooltip jQuery -->
+  <script>
+    $(function() {
+      $('#item1').tooltip();
+    });
+  </script>
+  <script>
+    $(function() {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
 
   </body>
 </html>
