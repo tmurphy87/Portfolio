@@ -1,3 +1,4 @@
+/*Index CSS*/
 * { box-sizing: border-box; }
 
 body {
@@ -7,7 +8,7 @@ body {
 
 /*NAV BAR*/
 .anchor {
-  padding-top: 60px;
+    padding-top: 60px;
 }
 
 .navbar {
@@ -21,13 +22,14 @@ body {
 .navbar-inverse .navbar-nav>li>a:hover {
     color: #020000;
     text-decoration: none;
+    -webkit-transition: color 1s;
 }
 
 .navbar-brand {
     display: inline-block;
-    text-decoration: none;
-    letter-spacing: 0.10em;
     padding: 20px 19px 20px;
+    letter-spacing: 0.10em;
+    text-decoration: none;
 }
 
 .navbar-brand a {
@@ -41,7 +43,7 @@ body {
 
 /**** INDEX SECTION ****/
 #home {
-    padding: 0px;   
+    padding: 0;   
 }
 
 .carousel-caption h3 {
@@ -50,22 +52,27 @@ body {
 }
 
 /**** WORK ****/
+
 /*portfolio img grid*/
 #work1 img {
-    border-radius: 5%;
     display: block;
+    border: 10px solid #fff;
+    -webkit-border-radius: 5%;
+    border-radius: 5%;
     margin: 15px auto;
 }
 
 #work1 h3 {
     position: absolute;
     display: inline-block;
-    top: 80%;
+    top: 75%;
     margin: 0;
-    margin-left: 27%;
+    margin-left: 30%;
 }
 /*calculator*/
 #work2 img {
+    border: 20px solid #fff;
+    -webkit-border-radius: 5%;
     border-radius: 5%;
     margin: 0 auto;
     width: 50%;
@@ -74,8 +81,7 @@ body {
 #work2 h4 {
     margin: 0 auto;
     width: 50%;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding: 2%;
     text-align: center;
 }
 
@@ -85,11 +91,12 @@ body {
 }
 
 .header h1 {
-    margin: 50px 0px;
+    margin: 50px 0;
     text-align: center;
 }
 
 .col-md-4 img {
+    -webkit-border-radius: 7%;
     border-radius: 7%;
 }
 
@@ -104,11 +111,17 @@ body {
 }
 
 .skills {
-    border-radius: 55%;
     display: inline-block;
+    -webkit-border-radius: 55%;
+    border-radius: 55%;
     padding: 50px; 
     background-color: rgba(127, 127, 127, 1);
     color: #FFF;
+}
+
+.skills h3 {
+    text-align: center;
+    text-transform: uppercase;
 }
 
 #skill-list {
@@ -130,7 +143,7 @@ body {
 
 .bg-font {
     display: inline-block;
-    padding: 0px 5px;
+    padding: 0 5px;
 }
 
 .p-font:hover {
@@ -151,24 +164,19 @@ body {
 
 /**** LEARN MORE SECTION ****/
 #faq {
-    padding: 100px 0px;
+    padding: 100px 0;
 }
 
 .learn-more {
-    padding: 0px 8px;
     position: relative;
-}
-
-.learn-more h2 {
-  text-align: left;
-  float: left;
+    padding: 0 8px; 
 }
 
 .modal-button {
-  float: right;
-  bottom: 12px;
-  right: 15px;
-  position: absolute;
+    position: absolute;
+    float: right;
+    bottom: 12px;
+    right: 15px;
 }
 
 #modalembed {
@@ -204,7 +212,7 @@ body {
 .footer-element {
     display: inline-block;
     float: right;
-    padding: 0px 5px;
+    padding: 0 5px;
 }
 
 /*Typography*/
@@ -242,7 +250,7 @@ h3 {
     font-family: 'Caveat', Helvetica, Arial, sans-serif, cursive;
     font-size: 2em;
     font-weight: 100;
-    -webkit-margin-before: 0em;
+    -webkit-margin-before: 0;
 }
 
 h3 {
@@ -250,30 +258,25 @@ h3 {
     text-shadow: 0 4px 4px rgb(0, 1, 6);
 }
 
-.skills h3 {
-    text-align: center;
-    text-transform: uppercase;
-}
-
 /* Media Queries */
 @media screen and (max-width: 768px){
 
 /**** Body ****/    
-    .anchor {padding: 10px;}
+.anchor {padding: 10px;}
 
-    hr {
-    margin-top: 0px;
-    margin-bottom: 0px;
+hr {
+    margin-top: 0;
+    margin-bottom: 0;
     border: 0;
-    border-top: 0px;
+    border-top: 0;
 }
 
 /**** Projects ****/    
-    #work1 {display: none;}
-    #work2 {margin-top: 7%;}
+#work1 {display: none;}
+#work2 {margin-top: 7%;}
 
 /**** Footer ****/
-    #github {display: none;}    
+#github {display: none;}    
 }
 
 
