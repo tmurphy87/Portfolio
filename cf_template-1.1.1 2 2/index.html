@@ -208,6 +208,7 @@
           <p>I'm Tiffany, an aspiring web developer. I love clean, minimal designs. I believe websites can be complex without feeling cluttered.</p>
         </div><!-- /intro col -->  
         <div class="col-sm-12 col-md-4 skills">
+          <div class="circle">
           <h3>My Skills</h3>
             <ul id="skill-list">
               <li>HTML5</li>
@@ -215,6 +216,7 @@
               <li>Bootstrap</li>
               <li>More to Come</li>
             </ul>
+          </div><!--/circle-->
         </div><!-- /skills col -->
       </div><!-- /row -->
       <div class="main-text">
@@ -249,6 +251,7 @@
             <label for="message" class="sr-only">Message</label>
             <textarea class="form-control" id="message" style="resize:none"
              cols="40" rows="10" placeholder="Place your message here&ast;" class="message-box" required="required"></textarea>
+            <P id="visible-comment"></P>
           </div>  
           <button type="submit" class="btn btn-default" id="bttn-submit">Submit</button>    
         </form>
@@ -355,12 +358,11 @@
   <!-- Can place script tags with JavaScript files here -->
   <!-- stellar parallax -->
   <script src="js/jquery.stellar.min.js"></script>
-  <script>$('#contact').stellar();</script>
-  <script src=“js/scripts.js”></script>
+  <script src="js/scripts.js"></script>
+  
+  
   <!-- github button -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
-  <script>$(document).ready(function(){
-  alert("Document is ready!");
 });</script>
 
   </body>

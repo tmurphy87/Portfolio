@@ -90,10 +90,10 @@ body {
     text-align: center;
 }
 
-.col-md-4 img {
-    -webkit-border-radius: 7%;
-    -moz-border-radius: 7%;
-    border-radius: 7%;
+.circle {
+    width: 275px;
+    height: 275px;
+    padding: 50px;
 }
 
 .main-text {
@@ -121,7 +121,6 @@ body {
 }
 
 #skill-list {
-    margin-left: 3%;
     font-size: 1.5em;
 }
 
