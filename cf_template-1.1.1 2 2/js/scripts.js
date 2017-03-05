@@ -38,24 +38,32 @@ $(document).ready(function(){
 
     //submit button
   $('#bttn-submit').on('click', function() {
-  	console.log('clicked');
-    var comment = $('#name').val();
-    var comment = $('#email').val();
-    var comment = $('#message').val();
-    console.log(name);
-    console.log(email);
+  	var comment = $('#message').val();
+  	if (comment==='') {
+  		$('#message').css('border', '2px solid red');
+  	}  else {
+  		$('#visible-comment').html('We have received your message.');
+  		$('#message').hide();
+  		$('#name').hide();
+  		$('#email').hide();
+  	}
     console.log(comment);
-    var text = 'We have received your message.';
-    console.log(text);
-    $('#visible-comment').html(text);
-    $('#message').hide();
-    $('#name').hide();
-    $('#email').hide();
     return false;
   });
 
     //textarea
   $('#message').css("backgroundColor", "#c3d8d8");
+  $('#message').on('keyup', function() {
+  	console.log('keyup happened');
+  	var charCount = $('#message').val().length;
+  	console.log(charCount);
+  	$('#char-count').html(charCount);
+  	if (charCount>50) {
+  		$('#char-count').css('color', 'red');
+  	} else {
+  		$('#char-count').css('color', 'white');
+  	}
+  });
 
 
 
