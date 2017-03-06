@@ -65,6 +65,22 @@ $(document).ready(function(){
   	}
   });
 
+  //work section
+  for(var i = 0; i < works.length; ++i ) {
+  	$('#work1').append('\
+  		<div class="col-xs-12 col-sm-6 col-md-3">\
+        <img class="img-responsive" src="'+ works[i] +'">\
+      </div>\
+      ');
+  	var images = $('#work1 img');
+  	if (i%2===0){
+  		$(images[i]).css('border', '2px solid DodgerBlue');
+  	}  else {
+  		$(images[i]).css('border', '2px solid salmon');
+  	};
+};
+
+
 
 
 
