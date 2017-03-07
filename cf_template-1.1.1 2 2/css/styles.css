@@ -52,22 +52,30 @@ body {
 /**** WORK ****/
 
 /*portfolio img grid*/
-#work1 img {
+.work-img {
     display: block;
-    border: 10px solid #fff;
-    -webkit-border-radius: 5%;
-    -moz-border-radius: 5%;
-    border-radius: 5%;
-    margin: 15px auto;
+    margin: auto;
+    max-width: 300px;
+    position: relative;
 }
 
-#work1 h3 {
+.info {
     position: absolute;
-    display: inline-block;
-    top: 75%;
-    margin: 0;
-    left: 35%;
+    top: 10%;
+    left: 15%;
+    text-transform: uppercase;
+    font-family: 'Fredericka the Great';
+    font-weight: 700;
+    letter-spacing: 0.5em;
+    line-height: 1.6;
+    color: snow;
+    display: none;
 }
+
+.proj-title {
+    font-weight: 100;
+}
+
 /*calculator*/
 #work2 img {
     border: 20px solid #fff;
@@ -223,7 +231,7 @@ h4,
     text-decoration: none;
 }
 
-.carousel-caption h3,
+.carousel-caption h3, 
 h3 {
     font-family: 'Fredericka the Great', cursive, Georgia, serif;
     text-shadow: 0 4px 4px rgb(0, 1, 6);

@@ -68,17 +68,26 @@ $(document).ready(function(){
   //work section
   for(var i = 0; i < works.length; ++i ) {
   	$('#work1').append('\
-  		<div class="col-xs-12 col-sm-6 col-md-3">\
-        <img class="img-responsive" src="'+ works[i] +'">\
+  		<div class="col-sm-3 col-md-3">\
+  		<a href="#work1" class="work-img">\
+          <img class="img-responsive" src="'+ works[i].pic +'">\
+          <span class="info"><p class="proj-title">Title:</p>'+ works[i].title +'</span>\
+        </a>\
       </div>\
       ');
   	var images = $('#work1 img');
   	if (i%2===0){
-  		$(images[i]).css('border', '2px solid DodgerBlue');
+  		$(images[i]).css('border', '3px solid snow');
   	}  else {
-  		$(images[i]).css('border', '2px solid salmon');
+  		$(images[i]).css('border', '3px solid DarkRed');
   	};
 };
+
+$('.work-img').mouseenter( function() {
+	$('.info', this).show();
+}).mouseleave(function() {
+	$('.info', this).hide();
+});
 
 
 
