@@ -143,6 +143,11 @@ body {
     color: white;
 }
 
+#map {
+    height: 300px;
+    width: 100%;
+}
+
 .bg-font {
     display: inline-block;
     padding: 0 5px;
